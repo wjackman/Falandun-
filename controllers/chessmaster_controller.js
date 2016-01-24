@@ -372,7 +372,7 @@ class Joetest {
 				if (cfg.hasOwnProperty('pieceTheme') !== true ||
 				(typeof cfg.pieceTheme !== 'string' &&
 				typeof cfg.pieceTheme !== 'function')) {
-					cfg.pieceTheme = 'img/chesspieces/wikipedia/{piece}.png';
+					cfg.pieceTheme = 'img/chesspieces/alpha/{piece}.png';
 				}
 				// animation speeds
 				if (cfg.hasOwnProperty('appearSpeed') !== true ||
