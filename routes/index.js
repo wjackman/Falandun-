@@ -4,9 +4,7 @@ var router = express.Router();
 // var chessInit = require('chessboardjs')
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  console.log("in route");
   
-  console.log("{{{{{{{}}}}}}}");
   // var board1 = ChessBoard('board1', 'start');
   res.render('index', { title: "David's first Attempt" });
 });
