@@ -1,5 +1,4 @@
-var 
-(function(awindow) {
+(function() {
 'use strict';
 //------------------------------------------------------------------------------
 // Chess Util Functions
@@ -294,12 +293,18 @@ window['ChessBoard'] = window['ChessBoard'] || function(containerElOrId, cfg) {
 			}
 			// set the containerEl
 			containerEl = $(el);
+			console.log("containerEl:");
+			console.log(containerEl);
+			console.log("^^^^^^^^^^^^^\n");
 		}
 		// else it must be something that becomes a jQuery collection
 		// with size 1
 		// ie: a single DOM node or jQuery object
 		else {
 			containerEl = $(containerElOrId);
+			console.log("containerEl2:");
+			console.log(containerEl);
+			console.log("222222222222222\n");
 
 			if (containerEl.length !== 1) {
 				window.alert('ChessBoard Error 1003: The first argument to ' +
@@ -1402,10 +1407,4 @@ window['ChessBoard'] = window['ChessBoard'] || function(containerElOrId, cfg) {
 // expose util functions
 window.ChessBoard.fenToObj = fenToObj;
 window.ChessBoard.objToFen = objToFen;
-}); // end anonymous wrapper
-//- var board1 = ChessBoard('board1', 'start');
-module.exports = {
-	chicken: function(){
-		console.log("monkeys");
-	}
-}
+})(); // end anonymous wrapper
